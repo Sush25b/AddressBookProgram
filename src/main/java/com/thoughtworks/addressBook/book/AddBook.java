@@ -6,22 +6,17 @@ import java.util.Scanner;
 
 public class AddBook implements AddressBookManager
 {
-        public void createBook() throws IOException
+        public boolean createBook(String bookName) throws IOException
         {
-            Scanner in = new Scanner(System.in);
-            System.out.println("Enter name of address book");
-            String book = in.next();
-
-            File file = new File(book + ".json");
+            File file = new File("/Users/sushantsukhadeophulsundar/Desktop/"+bookName + ".json");
 
             if ( file.createNewFile())
             {
                 System.out.println("File is created");
+                return true;
             }
-            else
-            {
-                System.out.println("File of that name already exists");
-            }
+            System.out.println("File of that name already exists");
+            return false;
         }
 }
 
