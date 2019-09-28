@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.addressBook.AddressBookManagementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-28T03:29:13" hostname="Sushants-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="giveFileName_whenFileCreated_thenReturnTrue" classname="com.thoughtworks.addressBook.AddressBookManagementTest" time="0.002"/>
+  <system-out><![CDATA[File is created
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

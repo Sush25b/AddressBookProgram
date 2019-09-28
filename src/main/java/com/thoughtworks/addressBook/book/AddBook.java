@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class AddBook implements AddressBookManager
+public class AddBook
 {
         public boolean createBook(String bookName) throws IOException
         {

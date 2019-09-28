@@ -1,7 +1,6 @@
 package com.thoughtworks.addressBook.address;
 
 import com.thoughtworks.addressBook.Person;
-import com.thoughtworks.addressBook.address.AddressBook;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,14 +9,13 @@ import java.util.Scanner;
 
 public class AddPerson implements AddressBook
 {
-    private static List<Person> listOfPerson = new ArrayList<Person>();
+    private static List<Person> people = new ArrayList<Person>();
 
     /**
      * Function to add a person in the specified address book
+     * @return
      */
-
-    @Override
-    public void changeDetails()
+    public List<Person> addPersonToAddressbook()
     {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter first name");
@@ -33,6 +31,7 @@ public class AddPerson implements AddressBook
 
         Person person=new Person(firstName,contactNo,streetName,zipcode,stateName);
 
-        listOfPerson.add(person);
+        people.add(person);
+        return people;
     }
 }
